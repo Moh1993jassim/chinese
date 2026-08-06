@@ -309,6 +309,9 @@ DATA.keys.forEach((k,ki)=>k.words.forEach((w,wi)=>push({id:`k${ki}_${wi}`,hz:w.h
 DATA.nums.forEach((n,i)=>push({id:'num'+i,hz:n.hz,py:n.py,ar:n.ar,grp:'أرقام 谐音 · '+n.num,gk:'mem',em:'🔢'}));
 DATA.bank.forEach(it=>push({...it,grp:'بنك الجمل',gk:'bank',em:'💬'}));
 DATA.drill2s.forEach(q=>push({id:q.id,hz:'',py:q.a,ar:q.aa,grp:'ردّ الثانيتين',gk:'drill',em:'⚡'}));
+DATA.combos=[{"a": "开", "am": "يفتح/يشغّل", "b": "车", "bm": "آلة/سيارة", "w": "开车", "py": "kāi chē", "ar": "يقود / يشغّل الآلة", "story": "تضغط زر التشغيل فتنطلق الآلة.", "cosl": "开车! = شغّل المعدة."}, {"a": "关", "am": "يغلق", "b": "机", "bm": "ماكينة", "w": "关机", "py": "guān jī", "ar": "يُطفئ الجهاز", "story": "تغلق على الماكينة فتنطفئ.", "cosl": "关机 قبل الصيانة."}, {"a": "开", "am": "يشغّل", "b": "机", "bm": "ماكينة", "w": "开机", "py": "kāi jī", "ar": "يُشغّل الجهاز", "story": "تفتح الماكينة فتشتغل.", "cosl": "开机 وابدأ العمل."}, {"a": "加", "am": "يضيف", "b": "油", "bm": "زيت/وقود", "w": "加油", "py": "jiā yóu", "ar": "تعبئة وقود / هيّا بك!", "story": "تضيف الزيت فتنشط الآلة — ومنها صارت كلمة تشجيع.", "cosl": "加油 = عبِّي وقود."}, {"a": "停", "am": "يوقف", "b": "车", "bm": "آلة/سيارة", "w": "停车", "py": "tíng chē", "ar": "يوقف / يركن", "story": "تضع يدك أمام الآلة فتقف.", "cosl": "停车 = أوقف المعدة."}, {"a": "上", "am": "يصعد", "b": "班", "bm": "وردية", "w": "上班", "py": "shàng bān", "ar": "يبدأ الدوام", "story": "تصعد إلى ورديتك.", "cosl": ""}, {"a": "下", "am": "ينزل", "b": "班", "bm": "وردية", "w": "下班", "py": "xià bān", "ar": "ينتهي الدوام", "story": "تنزل من الوردية للبيت.", "cosl": ""}, {"a": "工", "am": "عمل", "b": "人", "bm": "شخص", "w": "工人", "py": "gōng rén", "ar": "عامل", "story": "شخص + عمل = عامل.", "cosl": ""}, {"a": "工", "am": "عمل", "b": "作", "bm": "يفعل", "w": "工作", "py": "gōng zuò", "ar": "عمل / وظيفة", "story": "فِعل العمل = الشغل.", "cosl": ""}, {"a": "手", "am": "يد", "b": "机", "bm": "ماكينة", "w": "手机", "py": "shǒu jī", "ar": "موبايل", "story": "ماكينة صغيرة بكفّك.", "cosl": ""}, {"a": "电", "am": "كهرباء", "b": "话", "bm": "كلام", "w": "电话", "py": "diàn huà", "ar": "هاتف", "story": "كلام يمشي بالكهرباء.", "cosl": ""}, {"a": "电", "am": "كهرباء", "b": "脑", "bm": "دماغ", "w": "电脑", "py": "diàn nǎo", "ar": "حاسوب", "story": "دماغ يشتغل بالكهرباء.", "cosl": ""}, {"a": "电", "am": "كهرباء", "b": "灯", "bm": "مصباح", "w": "电灯", "py": "diàn dēng", "ar": "مصباح كهربائي", "story": "مصباح تغذّيه الكهرباء.", "cosl": ""}, {"a": "充", "am": "يملأ/يشحن", "b": "电", "bm": "كهرباء", "w": "充电", "py": "chōng diàn", "ar": "يشحن", "story": "تملأ الجهاز كهرباء.", "cosl": "اشحن البطارية 充电."}, {"a": "石", "am": "حجر", "b": "油", "bm": "زيت", "w": "石油", "py": "shí yóu", "ar": "نفط", "story": "الزيت الطالع من الصخر = النفط.", "cosl": "جوهر شغلك."}, {"a": "钻", "am": "يحفر", "b": "井", "bm": "بئر", "w": "钻井", "py": "zuān jǐng", "ar": "حفر الآبار", "story": "المثقاب ينزل بالبئر.", "cosl": "钻井 — عمل COSL الأساسي."}, {"a": "钻", "am": "مثقاب", "b": "头", "bm": "رأس", "w": "钻头", "py": "zuàn tóu", "ar": "لقمة الحفر (drill bit)", "story": "رأس المثقاب الي يخترق الصخر.", "cosl": "غيّر الـ钻头."}, {"a": "油", "am": "نفط", "b": "井", "bm": "بئر", "w": "油井", "py": "yóu jǐng", "ar": "بئر نفط", "story": "بئر يطلع منه النفط.", "cosl": ""}, {"a": "机", "am": "ماكينة", "b": "器", "bm": "جهاز", "w": "机器", "py": "jī qì", "ar": "آلة / معدة", "story": "جهاز آليّ.", "cosl": "شغّل الـ机器."}, {"a": "水", "am": "ماء", "b": "泵", "bm": "مضخة", "w": "水泵", "py": "shuǐ bèng", "ar": "مضخة ماء", "story": "مضخة تدفع الماء.", "cosl": "افحص 水泵."}, {"a": "安", "am": "أمان", "b": "全", "bm": "كامل", "w": "安全", "py": "ān quán", "ar": "سلامة", "story": "أمان كامل = سلامة.", "cosl": "安全第一 السلامة أولاً."}, {"a": "危", "am": "خطر", "b": "险", "bm": "مخاطرة", "w": "危险", "py": "wēi xiǎn", "ar": "خطر", "story": "خطر + مخاطرة = تحذير.", "cosl": "危险! منطقة خطرة."}, {"a": "安全", "am": "سلامة", "b": "帽", "bm": "قبعة", "w": "安全帽", "py": "ān quán mào", "ar": "خوذة", "story": "قبعة السلامة = الخوذة.", "cosl": "البس 安全帽."}, {"a": "手", "am": "يد", "b": "套", "bm": "غلاف", "w": "手套", "py": "shǒu tào", "ar": "قفّازات", "story": "غلاف يلبس اليد.", "cosl": "البس 手套."}, {"a": "工", "am": "عمل", "b": "具", "bm": "أداة", "w": "工具", "py": "gōng jù", "ar": "عُدّة / أدوات", "story": "أدوات العمل.", "cosl": "جيب الـ工具."}, {"a": "工程", "am": "هندسة", "b": "师", "bm": "خبير", "w": "工程师", "py": "gōng chéng shī", "ar": "مهندس", "story": "خبير الهندسة = مهندس.", "cosl": "أنت 工程师."}, {"a": "司", "am": "يتولّى", "b": "机", "bm": "آلة", "w": "司机", "py": "sī jī", "ar": "سائق", "story": "الي يتولّى الآلة = سائق.", "cosl": ""}, {"a": "火", "am": "نار", "b": "车", "bm": "عربة", "w": "火车", "py": "huǒ chē", "ar": "قطار", "story": "عربة تمشي بالنار (البخار).", "cosl": ""}, {"a": "飞", "am": "يطير", "b": "机", "bm": "ماكينة", "w": "飞机", "py": "fēi jī", "ar": "طائرة", "story": "ماكينة تطير.", "cosl": ""}, {"a": "出", "am": "يخرج", "b": "口", "bm": "فتحة", "w": "出口", "py": "chū kǒu", "ar": "مخرج", "story": "فتحة الخروج.", "cosl": "出口 مخرج الطوارئ."}, {"a": "入", "am": "يدخل", "b": "口", "bm": "فتحة", "w": "入口", "py": "rù kǒu", "ar": "مدخل", "story": "فتحة الدخول.", "cosl": ""}, {"a": "大", "am": "كبير", "b": "门", "bm": "باب", "w": "大门", "py": "dà mén", "ar": "البوّابة", "story": "الباب الكبير = البوابة.", "cosl": ""}, {"a": "明", "am": "مُضيء", "b": "天", "bm": "يوم", "w": "明天", "py": "míng tiān", "ar": "غداً", "story": "اليوم القادم المُضيء.", "cosl": ""}, {"a": "今", "am": "الآن", "b": "天", "bm": "يوم", "w": "今天", "py": "jīn tiān", "ar": "اليوم", "story": "يوم الآن.", "cosl": ""}, {"a": "昨", "am": "سابق", "b": "天", "bm": "يوم", "w": "昨天", "py": "zuó tiān", "ar": "أمس", "story": "اليوم السابق.", "cosl": ""}, {"a": "生", "am": "يولد", "b": "日", "bm": "يوم", "w": "生日", "py": "shēng rì", "ar": "عيد ميلاد", "story": "يوم الولادة.", "cosl": ""}, {"a": "医", "am": "طب", "b": "生", "bm": "شخص", "w": "医生", "py": "yī shēng", "ar": "طبيب", "story": "شخص الطب = طبيب.", "cosl": ""}, {"a": "老", "am": "محترم", "b": "师", "bm": "معلّم", "w": "老师", "py": "lǎo shī", "ar": "أستاذ", "story": "المعلّم المحترم.", "cosl": ""}, {"a": "学", "am": "يتعلّم", "b": "生", "bm": "شخص", "w": "学生", "py": "xué sheng", "ar": "طالب", "story": "شخص يتعلّم.", "cosl": ""}, {"a": "学", "am": "يتعلّم", "b": "校", "bm": "مكان", "w": "学校", "py": "xué xiào", "ar": "مدرسة", "story": "مكان التعلّم.", "cosl": ""}, {"a": "饭", "am": "طعام", "b": "店", "bm": "محل", "w": "饭店", "py": "fàn diàn", "ar": "مطعم", "story": "محل الطعام.", "cosl": ""}, {"a": "商", "am": "تجارة", "b": "店", "bm": "محل", "w": "商店", "py": "shāng diàn", "ar": "متجر", "story": "محل التجارة.", "cosl": ""}, {"a": "早", "am": "باكر", "b": "上", "bm": "وقت", "w": "早上", "py": "zǎo shang", "ar": "الصباح", "story": "الوقت الباكر.", "cosl": ""}, {"a": "晚", "am": "متأخر", "b": "上", "bm": "وقت", "w": "晚上", "py": "wǎn shang", "ar": "المساء", "story": "الوقت المتأخر.", "cosl": ""}, {"a": "中", "am": "وسط", "b": "午", "bm": "ظهيرة", "w": "中午", "py": "zhōng wǔ", "ar": "الظهر", "story": "وسط النهار.", "cosl": ""}, {"a": "时", "am": "وقت", "b": "间", "bm": "فراغ", "w": "时间", "py": "shí jiān", "ar": "وقت", "story": "فراغ الوقت.", "cosl": ""}, {"a": "房", "am": "غرفة", "b": "间", "bm": "فراغ", "w": "房间", "py": "fáng jiān", "ar": "غرفة", "story": "فراغ الغرفة.", "cosl": ""}, {"a": "中", "am": "الصين", "b": "文", "bm": "لغة", "w": "中文", "py": "Zhōng wén", "ar": "اللغة الصينية", "story": "لغة الصين.", "cosl": ""}, {"a": "满", "am": "ممتلئ", "b": "意", "bm": "رضا", "w": "满意", "py": "mǎn yì", "ar": "راضٍ", "story": "ممتلئ رضا (من شبكة OCLO مالتك).", "cosl": ""}, {"a": "充", "am": "يملأ", "b": "足", "bm": "كافٍ", "w": "充足", "py": "chōng zú", "ar": "وافر / كافٍ", "story": "مملوء لدرجة الكفاية (OCLO).", "cosl": ""}];
+DATA.imgquiz=[{"emoji": "🚗", "hz": "车", "py": "chē", "ar": "سيارة"}, {"emoji": "🔥", "hz": "火", "py": "huǒ", "ar": "نار"}, {"emoji": "💧", "hz": "水", "py": "shuǐ", "ar": "ماء"}, {"emoji": "📱", "hz": "手机", "py": "shǒujī", "ar": "موبايل"}, {"emoji": "💻", "hz": "电脑", "py": "diànnǎo", "ar": "حاسوب"}, {"emoji": "☎️", "hz": "电话", "py": "diànhuà", "ar": "هاتف"}, {"emoji": "✋", "hz": "手", "py": "shǒu", "ar": "يد"}, {"emoji": "👤", "hz": "人", "py": "rén", "ar": "شخص"}, {"emoji": "🐟", "hz": "鱼", "py": "yú", "ar": "سمكة"}, {"emoji": "🐈", "hz": "猫", "py": "māo", "ar": "قطة"}, {"emoji": "🐕", "hz": "狗", "py": "gǒu", "ar": "كلب"}, {"emoji": "🐔", "hz": "鸡", "py": "jī", "ar": "دجاجة"}, {"emoji": "🍚", "hz": "饭", "py": "fàn", "ar": "طعام / رز"}, {"emoji": "🍵", "hz": "茶", "py": "chá", "ar": "شاي"}, {"emoji": "☕", "hz": "咖啡", "py": "kāfēi", "ar": "قهوة"}, {"emoji": "☀️", "hz": "太阳", "py": "tàiyáng", "ar": "شمس"}, {"emoji": "🌙", "hz": "月亮", "py": "yuèliang", "ar": "قمر"}, {"emoji": "⛰️", "hz": "山", "py": "shān", "ar": "جبل"}, {"emoji": "🌧️", "hz": "雨", "py": "yǔ", "ar": "مطر"}, {"emoji": "🚪", "hz": "门", "py": "mén", "ar": "باب"}, {"emoji": "📖", "hz": "书", "py": "shū", "ar": "كتاب"}, {"emoji": "✈️", "hz": "飞机", "py": "fēijī", "ar": "طائرة"}, {"emoji": "🚂", "hz": "火车", "py": "huǒchē", "ar": "قطار"}, {"emoji": "🏫", "hz": "学校", "py": "xuéxiào", "ar": "مدرسة"}, {"emoji": "🏠", "hz": "家", "py": "jiā", "ar": "بيت"}, {"emoji": "👨‍🏫", "hz": "老师", "py": "lǎoshī", "ar": "أستاذ"}, {"emoji": "👨‍⚕️", "hz": "医生", "py": "yīshēng", "ar": "طبيب"}, {"emoji": "⛑️", "hz": "安全帽", "py": "ānquánmào", "ar": "خوذة"}, {"emoji": "🧤", "hz": "手套", "py": "shǒutào", "ar": "قفّازات"}, {"emoji": "🔧", "hz": "工具", "py": "gōngjù", "ar": "أداة"}, {"emoji": "🛢️", "hz": "石油", "py": "shíyóu", "ar": "نفط"}, {"emoji": "⚙️", "hz": "机器", "py": "jīqì", "ar": "آلة"}, {"emoji": "💡", "hz": "电灯", "py": "diàndēng", "ar": "مصباح"}, {"emoji": "🔋", "hz": "电", "py": "diàn", "ar": "كهرباء"}, {"emoji": "👋", "hz": "你好", "py": "nǐ hǎo", "ar": "مرحبا"}, {"emoji": "💦", "hz": "水泵", "py": "shuǐbèng", "ar": "مضخة ماء"}];
+DATA.combos.forEach((c,i)=>push({id:'cmb'+i,hz:c.w,py:c.py,ar:c.ar,grp:'الدمج المنطقي',gk:'combo',em:'🔗',note:c.a+'('+c.am+') + '+c.b+'('+c.bm+') → '+c.story}));
 
 /* ══════════ الحفظ والمراجعة ══════════ */
 const isLearned=id=>!!S.learned[id];
@@ -436,7 +439,7 @@ V.home=()=>{
   <div class="box">${[
     ['🕸️ شبكات الكلمات','nets'],['📚 المفردات','vocab'],['🆘 الإنقاذ','rescue'],
     ['🗣️ الحوارات','dlg'],['🪜 سُلّم الحفظ','ladder'],['🧠 أدوات الحفظ','mem'],
-    ['⚡ ردّ الثانيتين','drill'],['💬 بنك الجمل','bank']
+    ['⚡ ردّ الثانيتين','drill'],['🔗 الدمج','combo'],['💬 بنك الجمل','bank']
   ].map(([t,k])=>{const g=ALL.filter(x=>x.gk===k);
     return prog(t,g.filter(x=>isLearned(x.id)).length,g.length)}).join('')}</div>`;
 };
@@ -514,7 +517,7 @@ V.dlg=()=>{
 /* ── التمارين ── */
 let exTab='drill', qShow={};
 V.ex=()=>{
-  const tabs=[['drill','⚡ ردّ الثانيتين'],['ladder','🪜 سُلّم الحفظ'],['tests','📝 الاختبارات']];
+  const tabs=[['drill','⚡ ردّ الثانيتين'],['roleplay','🎭 حوار'],['image','🖼️ صور'],['ladder','🪜 سُلّم الحفظ'],['tests','📝 الاختبارات']];
   let body='';
   if(exTab==='drill'){
     const wks=[...new Set(DATA.drill2s.map(q=>q.wk))];
@@ -544,6 +547,8 @@ V.ex=()=>{
           <div class="top"><div class="em">🪜</div><div style="flex:1;min-width:0">
             <div class="hz">${E(l.hz)}</div><div class="py">${E(l.py)}</div><div class="ar">${E(l.ar)}</div></div></div>
           <div class="acts">${sayBtn(l.hz)}${learnBtn(l.id,'☑️')}</div></div>`).join('')}</div>`}).join('')}`;
+  } else if(exTab==='roleplay'){ body=rpRender();
+  } else if(exTab==='image'){ body=iqRender();
   } else {
     body=`<div class="note warn"><b>الاختبار الشفهي:</b> كل ٧ أيام. سجّله بصوتك وقيّم نفسك بصراحة.
       أسبوع بلا اختبار = أسبوع بلا دليل على التقدّم.</div>
@@ -582,7 +587,7 @@ V.rescue=()=>{
 let memTab='bridge';
 V.mem=()=>{
   const tabs=[['bridge','🌉 جسر الصوت'],['keys','🔑 نظام المفاتيح'],['tmpl','🧩 القوالب'],
-              ['nums','🔢 أرقام 谐音'],['phon','🎤 مختبر النطق'],['how','💡 طرق الحفظ']];
+              ['nums','🔢 أرقام 谐音'],['phon','🎤 مختبر النطق'],['mb','🔷 MB'],['how','💡 طرق الحفظ']];
   let b='';
   if(memTab==='bridge') b=`<div class="note"><b>كيف تشتغل:</b> اربط صوت الكلمة الصينية بكلمة عربية أو
     إنجليزية تعرفها، وتخيّل الصورة. الصورة الغريبة تثبت أكثر من الصورة المنطقية.</div>
@@ -633,6 +638,7 @@ V.mem=()=>{
       <div style="font-size:12.5px;color:var(--green);margin-top:4px">🎧 الاختبار: ${E(p.test)}</div>
       <div class="acts">${sayBtn(p.hz,'استمع')}<button class="btn play" data-say="${E(p.hz)}" data-slow="1">🐢 ببطء</button></div>
     </div>`).join('')}`;
+  else if(memTab==='mb') b=mbSheet();
   else b=`<div class="grid">${DATA.methods.map(m=>`<div class="box">
       <b style="color:var(--gold);font-size:15px">${E(m.name)}</b>
       <div style="font-size:13px;margin-top:6px">${E(m.how)}</div>
@@ -817,10 +823,104 @@ V.sync=()=>{
     <div class="row"><button class="big-btn danger" id="doReset">🗑 امسح كل شي</button></div></div>`;
 };
 
+
+/* ══════════ الميزات الجديدة: الدمج + الاختبارات التفاعلية + MB ══════════ */
+let rpIdx=0, rpStep=0, rpShow=false;
+let iqIdx=0, iqShow=false, iqPool=[];
+const isMe=l=>/محمد|^B$/.test((l&&l.role)||'');
+
+V.combo=()=>{
+  const done=DATA.combos.filter((c,i)=>isLearned('cmb'+i)).length;
+  return `<div class="note warn"><b>الدمج المنطقي:</b> بدل ما تحفظ كلمة صمّاء، اجمع معنى حرفين فتطلع كلمة منطقية تنحفظ لحالها — نفس فكرة الفيديو: 开 (يشغّل) + 车 (آلة) = 开车. عندك ${DATA.combos.length} كلمة · ${done} محفوظة.</div>
+  <div class="row" style="margin-bottom:10px"><button class="btn play" id="comboPlay">▶️ استمع للكل</button><button class="btn" onclick="stopAll()">⏹ إيقاف</button></div>
+  <div class="grid">${DATA.combos.map((c,i)=>{const on=isLearned('cmb'+i);return `<div class="keycard${on?' done':''}" style="${on?'border-color:var(--green)':''}">
+    <div style="display:flex;align-items:center;gap:9px;justify-content:center;flex-wrap:wrap">
+      <span style="text-align:center"><b style="font-size:29px">${E(c.a)}</b><div style="font-size:10.5px;color:var(--mut)">${E(c.am)}</div></span>
+      <b style="font-size:19px;color:var(--gold)">+</b>
+      <span style="text-align:center"><b style="font-size:29px">${E(c.b)}</b><div style="font-size:10.5px;color:var(--mut)">${E(c.bm)}</div></span>
+      <b style="font-size:19px;color:var(--gold)">→</b>
+      <span style="text-align:center"><b style="font-size:31px;color:var(--pink)">${E(c.w)}</b><div style="font-size:12px;color:var(--blue);direction:ltr">${E(c.py)}</div></span>
+    </div>
+    <div class="ks" style="margin-top:10px">🧠 ${E(c.story)}</div>
+    <div style="text-align:center;font-weight:700;margin-top:6px">${E(c.ar)}</div>
+    ${c.cosl?`<div style="color:var(--green);text-align:center;font-size:12.5px;margin-top:4px">🏗 ${E(c.cosl)}</div>`:''}
+    <div class="acts" style="justify-content:center">${sayBtn(c.w,'الكلمة')}${learnBtn('cmb'+i,'☑️ حفظتها')}<button class="btn" data-copy="${E(c.w)}">⧉</button></div>
+  </div>`;}).join('')}</div>`;
+};
+
+function rpRender(){
+  const D=DATA.dialogues; if(!D||!D.length) return '<div class="empty"><b>🎭</b>ماكو حوارات.</div>';
+  if(rpIdx>=D.length)rpIdx=0;
+  const d=D[rpIdx], total=d.lines.length; if(rpStep>total)rpStep=total;
+  const chips=`<div class="chips">${D.map((x,i)=>`<button class="ch${rpIdx===i?' on':''}" data-rpd="${i}">${E(x.title)}</button>`).join('')}</div>`;
+  let html='';
+  for(let i=0;i<rpStep;i++){const l=d.lines[i],me=isMe(l);
+    html+=`<div class="dl${me?' me':''}">${l.role?`<div class="who">${E(l.role)}</div>`:''}<div class="bub">
+      <div style="font-size:20px;font-weight:700;direction:ltr;text-align:left">${E(l.hz)}</div>
+      <div style="font-size:12px;color:var(--gold);direction:ltr;text-align:left">${E(l.py)}</div>
+      <div style="font-size:13px;margin-top:3px">${E(l.ar)}</div>
+      <div class="acts">${sayBtn(l.hz)}</div></div></div>`;}
+  let ctrl='';
+  if(rpStep<total){const l=d.lines[rpStep];
+    if(isMe(l)){ ctrl = rpShow
+      ? `<div class="dl me"><div class="who">${E(l.role||'محمد')}</div><div class="bub">
+           <div style="font-size:20px;font-weight:700;direction:ltr;text-align:left">${E(l.hz)}</div>
+           <div style="font-size:12px;color:var(--gold);direction:ltr;text-align:left">${E(l.py)}</div>
+           <div style="font-size:13px;margin-top:3px">${E(l.ar)}</div>
+           <div class="acts">${sayBtn(l.hz)}<button class="btn ok" data-rpn="1">✅ قلتها — التالي</button></div></div></div>`
+      : `<div class="qa on"><div class="qq">🎭 دورك الآن</div><div class="qm">قل ردّك بالصيني بصوت عالٍ خلال ثانيتين، ثم اكشف الرد الصحيح.</div>
+         <div class="acts"><button class="big-btn" data-rpx="1">👁 اكشف الرد الصحيح</button></div></div>`;
+    } else {
+      ctrl = `<div class="row"><button class="big-btn" data-rpn="1">▶️ شغّل ردّ الطرف الثاني</button></div>`;
+    }
+  } else {
+    ctrl = `<div class="note"><b>🎉 خلص الحوار.</b> أعده مرة ثانية بلا كشف — لين تردّ بسلاسة.</div>
+      <div class="row"><button class="big-btn" data-rpr="1">↺ من البداية</button>${d.lines[0]?learnBtn(d.lines[0].id,'☑️ أتقنت الحوار'):''}</div>`;
+  }
+  return `<div class="note warn"><b>حوار تفاعلي:</b> التطبيق يمثّل الطرف الثاني وأنت تردّ كطرفك. اختر حواراً، اسمع، وإذا جاء دورك قل ردّك ثم اكشف.</div>${chips}
+    <div class="row" style="margin:-2px 0 10px"><button class="btn play" data-saydlg="${DATA.dialogues.indexOf(d)}">▶️ استمع للحوار كامل</button><button class="btn" onclick="stopAll()">⏹</button></div>
+    <div class="box">${html||'<div class="sub">اضغط «شغّل ردّ الطرف الثاني» للبدء.</div>'}${ctrl}</div>`;
+}
+
+function iqBuild(){iqPool=DATA.imgquiz.map((_,i)=>i).sort(()=>Math.random()-.5);iqIdx=0;iqShow=false;}
+function iqRender(){
+  if(!DATA.imgquiz||!DATA.imgquiz.length)return '<div class="empty"><b>🖼️</b>ماكو صور.</div>';
+  if(!iqPool.length)iqBuild();
+  const q=DATA.imgquiz[iqPool[iqIdx%iqPool.length]];
+  const sc=(S.log&&S.log.iq)||{ok:0,seen:0};
+  return `<div class="note warn"><b>سمِّ الصورة:</b> شوف الرمز وقل اسمه بالصيني (汉字 + Pinyin) بصوت عالٍ، بعدين اكشف وقيّم نفسك بصدق.</div>
+   <div style="text-align:center;color:var(--mut);font-size:12.5px;margin-bottom:6px">${iqIdx+1} / ${iqPool.length} · صح ${sc.ok}/${sc.seen}</div>
+   <div class="fc" id="iqCard" style="min-height:200px">
+     <div style="font-size:88px;line-height:1.1">${q.emoji}</div>
+     ${iqShow?`<div class="big" style="font-size:40px">${E(q.hz)}</div><div class="mid">${E(q.py)}</div><div class="low">${E(q.ar)}</div>`
+             :`<div class="hint">شنو اسمها بالصيني؟ — قلها ثم اكشف</div>`}
+   </div>
+   <div class="fcbtns">${sayBtn(q.hz,'نطق')}${iqShow?'':`<button class="big-btn" data-iqx="1">👁 اكشف</button>`}</div>
+   ${iqShow?`<div class="fcbtns"><button class="btn ok" data-iqr="1">✅ عرفتها</button><button class="btn" data-iqr="0" style="color:var(--red)">✕ ما عرفتها</button></div>`:''}`;
+}
+
+function mbSheet(){
+  const rows=[
+    ['① النطق أولاً','أتقن كل أصوات Pinyin والنغمات (tones) قبل حفظ الكلمات.','🎤 مختبر النطق + 🐢 زر الإبطاء'],
+    ['② من المكوّن إلى الكلمة','تعلّم الكلمة من معنى حروفها المركّبة، لا صمّاء.','🔗 الدمج المنطقي + 🕸️ الشبكات'],
+    ['③ مُدخَل مفهوم','كل كلمة داخل جملة كاملة مفهومة، لا معزولة.','كل البطاقات فيها جملة مثال'],
+    ['④ روابط حيّة (Living Links)','اربط الجديد بصوت/صورة تعرفها.','🌉 جسر الصوت + 🔑 نظام المفاتيح'],
+    ['⑤ تكرار متباعد','راجع قبل ما تنسى: 1·3·7·14·30·60 يوم.','☑️ حفظتها → مراجعة أوتوماتيك'],
+    ['⑥ جُزُر اللغة','اصنع جملك الشخصية 100% من شغلك.','💬 بنك الجمل (التقاط الميدان)'],
+    ['⑦ محادثة وتطبيق','مثّل الحوار وسجّل نفسك كل أسبوع.','🎭 حوار تفاعلي + 📝 الاختبارات'],
+  ];
+  return `<div class="note"><b>Mandarin Blueprint</b> — من أقوى المناهج التسلسلية للصينية. أخذنا مبادئهم الي تخدم <b>المحادثة والنطق</b> ودمجناها بنظامك، وتركنا محرّك حفظ رسم الحروف (Hanzi Movie Method) لأنه لغير هدفك.</div>
+   ${rows.map(r=>`<div class="box"><b style="color:var(--gold);font-size:14.5px">${r[0]}</b>
+     <div style="font-size:13px;margin-top:5px">${r[1]}</div>
+     <div style="font-size:12.5px;color:var(--green);margin-top:5px">📍 مكانه عندك: ${r[2]}</div></div>`).join('')}
+   <a class="lnk" href="https://www.mandarinblueprint.com/" target="_blank" rel="noopener"><div class="ic">🔷</div><div class="tx"><b>MandarinBlueprint.com</b><span>ابدأ بقسم النطق المجاني (بدون حروف)</span></div><div class="go">افتح ↗</div></a>
+   <a class="lnk" href="https://www.youtube.com/watch?v=pW1PcrtEqws" target="_blank" rel="noopener"><div class="ic">▶️</div><div class="tx"><b>70 Phrases That Make Your Chinese Not Suck</b><span>الفيديو الي عجبك — عبارات ترفع مستواك</span></div><div class="go">افتح ↗</div></a>`;
+}
+
 /* ══════════ التنقّل ══════════ */
 const TABS=[['home','🏠','اليوم'],['nets','🕸️','الشبكات'],['vocab','📚','المفردات'],
  ['dlg','🗣️','الحوارات'],['ex','⚡','التمارين'],['rescue','🆘','الإنقاذ'],
- ['mem','🧠','الحفظ'],['grammar','📐','القواعد'],['fc','🎴','بطاقات'],
+ ['mem','🧠','الحفظ'],['combo','🔗','الدمج'],['grammar','📐','القواعد'],['fc','🎴','بطاقات'],
  ['listen','🎧','الاستماع'],['bank','💬','البنك'],['sync','⚙️','المزامنة']];
 function nav(){const d=dueList().length;
   $('#nav').innerHTML=TABS.map(t=>`<button class="nb${S.tab===t[0]?' on':''}" data-tab="${t[0]}">
@@ -866,6 +966,14 @@ document.addEventListener('click',e=>{
   if(t=g('[data-df]')){dSrc=t.dataset.df;render();return}
   if(t=g('[data-np]')){netPage=+t.dataset.np;render();window.scrollTo(0,0);return}
   if(t=g('[data-ex]')){exTab=t.dataset.ex;render();window.scrollTo(0,0);return}
+  if(t=g('[data-rpd]')){rpIdx=+t.dataset.rpd;rpStep=0;rpShow=false;render();window.scrollTo(0,0);return}
+  if(g('[data-rpn]')){rpStep++;rpShow=false;const l=DATA.dialogues[rpIdx].lines[rpStep-1];if(l&&!isMe(l))say(l.hz);render();return}
+  if(g('[data-rpx]')){rpShow=true;render();return}
+  if(g('[data-rpr]')){rpStep=0;rpShow=false;render();return}
+  if(g('[data-iqx]')){iqShow=true;const q=DATA.imgquiz[iqPool[iqIdx%iqPool.length]];if(q)say(q.hz);render();return}
+  if(t=g('[data-iqr]')){S.log=S.log||{};S.log.iq=S.log.iq||{ok:0,seen:0};S.log.iq.seen++;if(t.dataset.iqr==='1')S.log.iq.ok++;iqIdx=(iqIdx+1)%iqPool.length;iqShow=false;save();render();return}
+  if(g('#comboPlay')){sayAll(DATA.combos.map(c=>c.w));return}
+  if(g('#iqCard')&&!g('[data-say]')){iqShow=!iqShow;render();return}
   if(t=g('[data-mem]')){memTab=t.dataset.mem;render();window.scrollTo(0,0);return}
   if(t=g('[data-fcs]')){fcSrc=t.dataset.fcs;fcBuild();render();return}
   if(t=g('[data-fcm]')){fcMode=t.dataset.fcm;fcFlip=false;render();return}
